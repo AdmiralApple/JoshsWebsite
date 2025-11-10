@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champion Creator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="story" id="story"></section>
+      <form class="interaction" id="interaction" autocomplete="off">
+        <label class="prompt" id="prompt" for="response"></label>
+        <input
+          class="response-input"
+          type="text"
+          id="response"
+          name="response"
+          required
+        />
+        <button type="submit" class="primary-button">Submit</button>
+      </form>
+      <section class="results" id="results" hidden>
+        <div class="results__flavor" id="flavor"></div>
+        <div class="results__stats">
+          <h2>Rolled Stats</h2>
+          <ul class="stats-list" id="stats"></ul>
+        </div>
+        <div class="reroll" id="reroll-controls">
+          <p id="reroll-text"></p>
+          <button class="secondary-button" id="reroll-button">Reroll stats</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
